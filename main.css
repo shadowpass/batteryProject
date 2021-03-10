@@ -1,0 +1,129 @@
+
+
+#fullBattery {
+	display: inline-block;
+	width: 40%;
+}
+
+.battery-head {
+	width: 50px;
+	height: 10px;
+	background-color: black;
+	margin: auto;
+
+}
+
+.percent_25 {
+	width: 100px;
+	height: 50px;
+	margin: auto;
+}
+
+.bar-house {
+	margin: auto;
+	width: 100px;
+	height: 200px;
+	border: solid black 2px;
+}
+
+/*Full*/
+
+.battery-100 {
+	background-color: green;
+}
+
+.battery-75 {
+	background-color: lime;
+}
+
+.battery-50{
+	background-color: orange;
+}
+
+.battery-25 {
+	background-color: red;
+}
+
+
+
+/*Charging with CSS Transition */
+
+#chargingBattery {
+	display: inline-block;
+	width: 40%;
+
+}
+
+.charging-100 {
+	transition-duration: 4s;
+	transition-delay: 4s;
+}
+
+.charging-75 {
+	transition-duration: 3s;
+	transition-delay: 3s;
+}
+
+.charging-50{
+	transition-duration: 2s;
+	transition-delay: 2s;
+}
+
+.charging-25 {
+	transition-duration: 1s;
+	transition-delay: 1s;
+}
+
+.transitioning {
+	transition-property: all;
+	transition-timing-function: ease;
+}
+
+/* Charging with CSS Animation*/
+
+#chargingBattery2 {
+	display: inline-block;
+	width: 40%;
+
+}
+
+.animation-trigger {
+	animation-name: blink;
+	animation-iteration-count: infinite;
+}
+
+
+.charginga-100 {
+	animation-duration: 4s;
+	animation-delay: 4s
+}
+
+.charginga-75 {
+	animation-duration: 3s;
+	animation-delay: 3s;
+}
+
+.charginga-50{
+	animation-duration: 2s;
+	animation-delay: 2s;
+}
+
+.charginga-25 {
+	animation-duration: 1s;
+	animation-delay: 1s;
+}
+
+@keyframes blink {
+	from {
+		background-color: #fff;
+	}
+
+	75% {
+		opacity: 0.2;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
